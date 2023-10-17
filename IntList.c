@@ -17,7 +17,7 @@ void clear(struct List* arr) {
 }
 
 struct List createList(size_t capacity) {
-	int* data = (int *) calloc(capacity, sizeof(int));
+	unsigned int* data = (int *) calloc(capacity, sizeof(unsigned int));
 	struct List result;
 	result.size = 0;
 	result.space = capacity;
